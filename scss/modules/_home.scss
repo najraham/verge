@@ -1,0 +1,88 @@
+.main-content {
+  clear: right;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 40px 0;
+
+  .what-we-do {
+    width: 65%;
+
+    p {
+      font-size: 21px;
+      line-height: 29px;
+    }
+  }
+
+  .whats-new {
+    width: 24%;
+    text-align: center;
+    background-color: $white;
+    box-shadow: 0 0  10px 5px $light-gray;
+
+    img {
+      width: 70%;
+      margin: 0 auto 30px;
+    }
+  }
+  h1 {
+     font-size: $header-font-size;
+     text-transform: uppercase;
+   }
+}
+
+.bg-gray {
+  background-color: $light-gray;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .interact {
+    padding-top: inherit;
+    width: 35%;
+    text-align: center;
+
+    hr {
+      z-index: -1;
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 2px solid #af0000;
+      margin: 1em 0;
+      padding: 0;
+    }
+
+    h1 {
+      z-index: 2;
+      background-color: $light-gray;
+      width: 35%;
+      margin: -35px auto 10px;
+    }
+
+    button {
+      font-weight: bold;
+      text-transform: uppercase;
+      background-color: #af0000;
+      color: white;
+      border: none;
+      height: 40px;
+      width: 200px;
+    }
+  }
+
+  .get-started {
+    padding-top: inherit;
+    width: 55%;
+
+    h1 {
+      color: #af0000;
+    }
+
+    p {
+      font-size: 21px;
+      line-height: 29px;
+    }
+  }
+}

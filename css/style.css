@@ -1,0 +1,185 @@
+:root {
+  background-color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  z-index: 25;
+}
+.navbar .nav-logo {
+  width: 30%;
+}
+.navbar .nav-logo .logo {
+  width: 100px;
+  margin-left: 80px;
+}
+.navbar .nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1 0 47%;
+}
+.navbar .login-signup {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1 0 12%;
+  padding: 5px;
+}
+.navbar .login-signup #login {
+  font-size: 12px;
+  text-transform: inherit;
+  border: none;
+  background-color: #ffffff;
+  margin-right: 10px;
+}
+.navbar .login-signup #signup {
+  font-size: 12px;
+  text-transform: inherit;
+  border: none;
+  background-color: gray;
+  color: #ffffff;
+  height: 22px;
+  width: 80px;
+}
+
+.banner {
+  padding-top: 50px;
+  position: relative;
+}
+.banner .banner-img {
+  width: 100%;
+  z-index: -1;
+}
+.banner .banner-img img {
+  max-width: 90%;
+  float: right;
+}
+.banner .banner-desc {
+  position: absolute;
+  z-index: 1;
+  background-color: #ffffff;
+  margin-left: 5%;
+  margin-top: 10%;
+  width: 300px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.banner .banner-desc h1 {
+  font-size: 28px;
+  line-height: 29px;
+  color: #bf0000;
+}
+.banner .banner-desc p {
+  font-size: 20px;
+}
+.banner .banner-desc button {
+  font-weight: bold;
+  float: right;
+  text-transform: uppercase;
+  background-color: #af0000;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 150px;
+}
+
+.main-content {
+  clear: right;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 40px 0;
+}
+.main-content .what-we-do {
+  width: 65%;
+}
+.main-content .what-we-do p {
+  font-size: 21px;
+  line-height: 29px;
+}
+.main-content .whats-new {
+  width: 24%;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 5px #f0f0f0;
+}
+.main-content .whats-new img {
+  width: 70%;
+  margin: 0 auto 30px;
+}
+.main-content h1 {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.bg-gray {
+  background-color: #f0f0f0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.bg-gray .interact {
+  padding-top: inherit;
+  width: 35%;
+  text-align: center;
+}
+.bg-gray .interact hr {
+  z-index: -1;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #af0000;
+  margin: 1em 0;
+  padding: 0;
+}
+.bg-gray .interact h1 {
+  z-index: 2;
+  background-color: #f0f0f0;
+  width: 35%;
+  margin: -35px auto 10px;
+}
+.bg-gray .interact button {
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #af0000;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 200px;
+}
+.bg-gray .get-started {
+  padding-top: inherit;
+  width: 55%;
+}
+.bg-gray .get-started h1 {
+  color: #af0000;
+}
+.bg-gray .get-started p {
+  font-size: 21px;
+  line-height: 29px;
+}
+
+/*# sourceMappingURL=style.css.map */
