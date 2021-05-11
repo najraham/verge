@@ -340,11 +340,15 @@ body p {
   bottom: 10px;
   margin: -17em auto 0;
   padding: 20px;
+  color: #000000;
 }
 .case-study-and-white-papers .tag h1 {
   font-size: 19px;
   margin: 0 auto;
   font-weight: bold;
+}
+.case-study-and-white-papers .tag p {
+  font-size: 18px;
 }
 .case-study-and-white-papers .tag button {
   text-transform: uppercase;
@@ -361,6 +365,7 @@ body p {
   position: relative;
   width: 90%;
   margin: 0 auto;
+  color: #000000;
 }
 .partners-say .background-img {
   opacity: 0.15;
@@ -370,7 +375,7 @@ body p {
   position: absolute;
 }
 .partners-say h1 {
-  width: 28%;
+  width: 30%;
   margin: 70px auto;
   text-align: center;
 }
@@ -398,34 +403,6 @@ body p {
   border-left: 1px solid #af0000;
   height: 300px;
   margin-top: 0;
-}
-
-.main-content {
-  padding-top: 0;
-}
-.main-content .gray {
-  background-color: #f0f0f0;
-  padding: 50px 0;
-}
-.main-content .gray .our-mission {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.main-content .gray .our-mission .text {
-  width: 60%;
-}
-.main-content .gray .our-mission .text h1 {
-  color: #af0000;
-}
-.main-content .gray .our-mission .image {
-  width: 30%;
-  margin: auto 0;
-}
-.main-content .gray .our-mission .image img {
-  width: 80%;
 }
 
 .footer {

@@ -188,11 +188,16 @@
     bottom: 10px;
     margin: -17em auto 0;
     padding: 20px;
+    color: $black;
 
     h1 {
       font-size: 19px;
       margin: 0 auto;
       font-weight: bold;
+    }
+
+    p {
+      font-size: 18px;
     }
 
     button {
@@ -212,6 +217,7 @@
   position: relative;
   width: 90%;
   margin: 0 auto;
+  color: $black;
 
   .background-img {
     opacity: 0.15;
@@ -222,7 +228,7 @@
   }
 
   h1 {
-    width: 28%;
+    width: 30%;
     margin: 70px auto;
     text-align: center;
   }
