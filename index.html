@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/7dd0b928a5.js" crossorigin="anonymous"></script>
     <title>Verge</title>
 </head>
 <body>
@@ -17,8 +18,23 @@
         </div>
         <ul class="nav-list">
             <li>About</li>
-            <li>Solutions</li>
-            <li>Partners</li>
+            <li class="dropdown">
+                <span>Solutions</span>
+                <div class="dropdown-content">
+                    <a>Our Solution</a>
+                    <a>Product Pricing</a>
+                    <a>Product Videos</a>
+                    <a>Promotions</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <span>Partners</span>
+                <div class="dropdown-content">
+                    <a>Channel</a>
+                    <a>Reseller</a>
+                </div>
+            </li>
             <li>Media</li>
             <li>Contact</li>
         </ul>
@@ -30,41 +46,155 @@
 
     <section class="banner">
         <div class="banner-img">
-            <img src="https://picsum.photos/1200/600" alt="banner 1">
+            <img src="https://picsum.photos/1200/850" alt="banner 1">
         </div>
         <div class="banner-desc">
             <h1>We are at the convergence of digital, precision and autonomous agriculture.</h1>
             <p>At verge, we focus on keeping growers connected to the land while focusing on simplifying complexities around entire farming operations.</p>
             <button> Learn more</button>
         </div>
+        <ol class="pagination">
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+        </ol>
     </section>
 
     <section class="main-content">
-        <div class="what-we-do">
-            <h1>What we do</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <div class="what-we-do-and-whats-new">
+            <div class="what-we-do">
+                <h1>What we do</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="whats-new">
+                <h1>What's new</h1>
+                <img src="https://picsum.photos/100/" alt="Whats new">
+            </div>
         </div>
-        <div class="whats-new">
-            <h1>What's new</h1>
-            <img src="https://picsum.photos/100/" alt="Whats new">
-        </div>
+
         <div class="bg-gray">
-            <div class="interact">
+            <div class="interact header-with-strike">
                 <hr>
                 <h1>Interact</h1>
-                <img src="https://picsum.photos/450/600" alt="">
+                <img src="https://picsum.photos/350/650" alt="">
                 <button>Sign up</button>
             </div>
             <div class="get-started">
                 <h1>Get started by discovering a solution that works for you</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                <img src="https://picsum.photos/300/300" alt="">
-                <img src="https://picsum.photos/300/300" alt="">
-                <img src="https://picsum.photos/300/300" alt="">
-                <img src="https://picsum.photos/300/300" alt="">
+                <div class="get-started-images">
+                    <img src="https://picsum.photos/300/300" alt="">
+                    <img src="https://picsum.photos/300/300" alt="">
+                    <img src="https://picsum.photos/300/300" alt="">
+                    <img src="https://picsum.photos/300/300" alt="">
+                </div>
             </div>
         </div>
+        <div class="partners">
+            <h1>Our current partners</h1>
+            <div class="partner-logo">
+                <img src="https://picsum.photos/300/100" alt="partner">
+                <img src="https://picsum.photos/300/100" alt="partner">
+                <img src="https://picsum.photos/300/100" alt="partner">
+            </div>
+            <ol class="pagination">
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+            </ol>
+        <div class="case-study-and-white-papers header-with-strike">
+            <div class="case-study">
+                <hr>
+                <h1>Case study</h1>
+                <img src="https://picsum.photos/350/650" alt="">
+                <div class="tag">
+                    <h1>Coutts agro case study</h1>
+                    <p>At verge, we focus on keeping growers connected to the land while focusing on simplifying complexities around entire farming operations.</p>
+                    <button> Download</button>
+                </div>
+            </div>
+            <div class="white-papers">
+                <hr>
+                <h1>White papers</h1>
+                <div class="papers">
+                    <div class="paper">
+                        <img src="https://picsum.photos/350/650" alt="">
+                        <div class="tag">
+                            <h3>the true value of path planning</h3>
+                            <h1>Coutts agro case study</h1>
+                            <p>At verge, we focus on keeping growers connected to the land while focusing on simplifying complexities around entire farming operations.</p>
+                            <button> Download</button>
+                        </div>
+                    </div>
+                    <div class="paper">
+                        <img src="https://picsum.photos/350/650" alt="">
+                        <div class="tag">
+                            <h3>the true value of path planning</h3>
+                            <h1>Coutts agro case study</h1>
+                            <p>At verge, we focus on keeping growers connected to the land while focusing on simplifying complexities around entire farming operations.</p>
+                            <button> Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="partners-say">
+            <img class="background-img" src="https://picsum.photos/350/650" alt="background image">
+            <h1>What our partners are saying.</h1>
+            <hr class="horizontal-line">
+            <div class="sayings">
+                <i class="fas fa-chevron-left"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam aperiam assumenda corporis
+                    est, fugit harum incidunt mollitia omnis optio repellat sapiente vitae? Est et, maiores maxime nesciunt
+                    quibusdam ut.</p>
+                <hr class="vertical-line">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam aperiam assumenda corporis
+                    est, fugit harum incidunt mollitia omnis optio repellat sapiente vitae? Est et, maiores maxime nesciunt
+                    quibusdam ut.</p>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </section>
 
+    <section class="footer">
+        <div class="contact-info">
+            <div class="logo-and-social">
+                <img class="logo" src="images/logo.png" alt="logo">
+                <div class="social">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+
+            </div>
+            <div class="links">
+                <ul>
+                    <li>about</li>
+                    <li>reseller</li>
+                    <li>products</li>
+                    <li>newsroom</li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <h1>contact us</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis eveniet molestias numquam, officia suscipit veniam!</p>
+            </div>
+        </div>
+        <footer>
+            <div class="left">
+                &copy; 2019 All Rights Reserved
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Privacy Policy</li> |
+                    <li>Terms of Service</li> |
+                    <li>FAQs</li>
+                </ul>
+            </div>
+        </footer>
     </section>
 </body>
 </html>
