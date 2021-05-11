@@ -7,4 +7,17 @@
 body {
   width: 100%;
   margin: 0 auto;
+
+  p {
+    font-size: $default-font-size;
+  }
+}
+
+.main-content {
+  padding: 40px 0;
+
+  h1 {
+    font-size: $header-font-size;
+    text-transform: uppercase;
+  }
 }

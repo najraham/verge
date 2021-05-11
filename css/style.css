@@ -8,6 +8,17 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+body p {
+  font-size: 20px;
+}
+
+.main-content {
+  padding: 40px 0;
+}
+.main-content h1 {
+  font-size: 33px;
+  text-transform: uppercase;
+}
 
 .navbar {
   background-color: #ffffff;
@@ -147,9 +158,6 @@ body {
   line-height: 29px;
   color: #bf0000;
 }
-.banner .banner-desc p {
-  font-size: 20px;
-}
 .banner .banner-desc button {
   font-weight: bold;
   float: right;
@@ -186,57 +194,48 @@ body {
   margin: -49px auto 20px;
 }
 
-.main-content {
-  clear: right;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 40px 0;
-}
-.main-content h1 {
-  font-size: 33px;
-  text-transform: uppercase;
-}
-.main-content .what-we-do-and-whats-new {
+.what-we-do-and-whats-new {
   width: 90%;
+  margin: 0 auto 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin-bottom: 20px;
+  justify-content: space-between;
 }
-.main-content .what-we-do-and-whats-new .what-we-do {
+.what-we-do-and-whats-new .what-we-do {
   width: 65%;
 }
-.main-content .what-we-do-and-whats-new .what-we-do p {
+.what-we-do-and-whats-new .what-we-do p {
   font-size: 21px;
   line-height: 29px;
 }
-.main-content .what-we-do-and-whats-new .whats-new {
+.what-we-do-and-whats-new .whats-new {
   width: 24%;
   text-align: center;
   background-color: #ffffff;
   box-shadow: 0 0 10px 5px #f0f0f0;
 }
-.main-content .what-we-do-and-whats-new .whats-new img {
+.what-we-do-and-whats-new .whats-new img {
   width: 70%;
   margin: 0 auto 30px;
 }
-.main-content .bg-gray {
+
+.bg-gray {
   background-color: #f0f0f0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 40px;
+  width: 90%;
+  margin: 0 auto;
 }
-.main-content .bg-gray .interact {
+.bg-gray .interact {
   padding-top: inherit;
   width: 35%;
 }
-.main-content .bg-gray .interact h1 {
+.bg-gray .interact h1 {
   background-color: #f0f0f0;
 }
-.main-content .bg-gray .interact button {
+.bg-gray .interact button {
   font-weight: bold;
   text-transform: uppercase;
   background-color: #af0000;
@@ -246,88 +245,91 @@ body {
   width: 200px;
   margin-top: 20px;
 }
-.main-content .bg-gray .get-started {
+.bg-gray .get-started {
   padding-top: inherit;
   width: 55%;
 }
-.main-content .bg-gray .get-started h1 {
+.bg-gray .get-started h1 {
   color: #af0000;
 }
-.main-content .bg-gray .get-started p {
+.bg-gray .get-started p {
   font-size: 21px;
   line-height: 29px;
 }
-.main-content .bg-gray .get-started .get-started-images {
+.bg-gray .get-started .get-started-images {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 }
-.main-content .bg-gray .get-started .get-started-images img {
+.bg-gray .get-started .get-started-images img {
   width: 45%;
   margin-bottom: 20px;
 }
-.main-content .partners {
+
+.partners {
   text-align: center;
   color: #af0000;
-  margin: 50px 0 70px;
   width: 85%;
+  margin: 50px auto 70px;
 }
-.main-content .partners h1 {
+.partners h1 {
   margin-bottom: 2em;
 }
-.main-content .partners .partner-logo {
+.partners .partner-logo {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.main-content .partners .partner-logo img {
+.partners .partner-logo img {
   width: 30%;
 }
-.main-content .case-study-and-white-papers {
+
+.case-study-and-white-papers {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-bottom: 70px;
+  width: 90%;
+  margin: 0 auto 70px;
 }
-.main-content .case-study-and-white-papers h1 {
+.case-study-and-white-papers h1 {
   background-color: #ffffff;
 }
-.main-content .case-study-and-white-papers .case-study {
+.case-study-and-white-papers .case-study {
   width: 30%;
   position: relative;
 }
-.main-content .case-study-and-white-papers .case-study h1 {
+.case-study-and-white-papers .case-study h1 {
   width: 71%;
 }
-.main-content .case-study-and-white-papers .white-papers {
+.case-study-and-white-papers .white-papers {
   width: 60%;
 }
-.main-content .case-study-and-white-papers .white-papers .papers {
+.case-study-and-white-papers .white-papers .papers {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.main-content .case-study-and-white-papers .white-papers .papers .paper {
+.case-study-and-white-papers .white-papers .papers .paper {
   position: relative;
   width: 49.5%;
 }
-.main-content .case-study-and-white-papers .white-papers .papers .paper img {
+.case-study-and-white-papers .white-papers .papers .paper img {
   height: 100%;
 }
-.main-content .case-study-and-white-papers .white-papers .papers .paper h3 {
+.case-study-and-white-papers .white-papers .papers .paper h3 {
   margin: 0;
   font-size: 13px;
   text-transform: uppercase;
 }
-.main-content .case-study-and-white-papers img {
+.case-study-and-white-papers img {
   z-index: -255;
   float: top;
   width: 100%;
   margin: 0 auto;
 }
-.main-content .case-study-and-white-papers .tag {
+.case-study-and-white-papers .tag {
   font-size: 15px;
   background-color: #ffffff;
   position: absolute;
@@ -339,12 +341,12 @@ body {
   margin: -17em auto 0;
   padding: 20px;
 }
-.main-content .case-study-and-white-papers .tag h1 {
+.case-study-and-white-papers .tag h1 {
   font-size: 19px;
   margin: 0 auto;
   font-weight: bold;
 }
-.main-content .case-study-and-white-papers .tag button {
+.case-study-and-white-papers .tag button {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 19px;
@@ -354,46 +356,76 @@ body {
   height: 40px;
   color: #af0000;
 }
-.main-content .partners-say {
+
+.partners-say {
   position: relative;
+  width: 90%;
+  margin: 0 auto;
 }
-.main-content .partners-say .background-img {
+.partners-say .background-img {
   opacity: 0.15;
   width: 100%;
   height: 100%;
   display: block;
   position: absolute;
 }
-.main-content .partners-say h1 {
+.partners-say h1 {
   width: 28%;
   margin: 70px auto;
   text-align: center;
 }
-.main-content .partners-say .horizontal-line {
+.partners-say .horizontal-line {
   border-top: 1px solid #af0000;
   width: 50px;
   margin-bottom: 0;
 }
-.main-content .partners-say .sayings {
+.partners-say .sayings {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
-.main-content .partners-say .sayings p {
+.partners-say .sayings p {
   width: 37%;
-  font-size: 20px;
   font-style: oblique;
 }
-.main-content .partners-say .sayings i {
+.partners-say .sayings i {
   font-size: 40px;
   width: 10%;
   text-align: center;
 }
-.main-content .partners-say .sayings .vertical-line {
+.partners-say .sayings .vertical-line {
   border-left: 1px solid #af0000;
   height: 300px;
   margin-top: 0;
+}
+
+.main-content {
+  padding-top: 0;
+}
+.main-content .gray {
+  background-color: #f0f0f0;
+  padding: 50px 0;
+}
+.main-content .gray .our-mission {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.main-content .gray .our-mission .text {
+  width: 60%;
+}
+.main-content .gray .our-mission .text h1 {
+  color: #af0000;
+}
+.main-content .gray .our-mission .image {
+  width: 30%;
+  margin: auto 0;
+}
+.main-content .gray .our-mission .image img {
+  width: 80%;
 }
 
 .footer {

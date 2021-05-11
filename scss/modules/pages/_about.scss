@@ -1,0 +1,51 @@
+//.banner {
+//  .banner-img {
+//    img{
+//      width: 100%;
+//      max-width: 100%;
+//      clear: both;
+//      display: block;
+//      height: 99vh;
+//    }
+//  }
+//  .banner-desc {
+//    bottom: 1%;
+//    height: 20%;
+//    h1 {
+//      color: $black;
+//      text-transform: uppercase;
+//    }
+//  }
+//}
+
+.main-content {
+  padding-top: 0;
+
+  .gray {
+    background-color: $light-gray;
+    padding: 50px 0;
+
+    .our-mission {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .text {
+        width: 60%;
+        h1 {
+          color: $red;
+        }
+      }
+
+      .image {
+        width: 30%;
+        margin: auto 0;
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
