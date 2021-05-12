@@ -1,51 +1,246 @@
-//.banner {
-//  .banner-img {
-//    img{
-//      width: 100%;
-//      max-width: 100%;
-//      clear: both;
-//      display: block;
-//      height: 99vh;
-//    }
-//  }
-//  .banner-desc {
-//    bottom: 1%;
-//    height: 20%;
-//    h1 {
-//      color: $black;
-//      text-transform: uppercase;
-//    }
-//  }
-//}
+.main-content {
+  padding-top: 0;
 
-//.main-content {
-//  padding-top: 0;
-//
-//  .gray {
-//    background-color: $light-gray;
-//    padding: 50px 0;
-//
-//    .our-mission {
-//      width: 90%;
-//      margin: 0 auto;
-//      display: flex;
-//      flex-direction: row;
-//      justify-content: space-around;
-//
-//      .text {
-//        width: 60%;
-//        h1 {
-//          color: $red;
-//        }
-//      }
-//
-//      .image {
-//        width: 30%;
-//        margin: auto 0;
-//        img {
-//          width: 80%;
-//        }
-//      }
-//    }
-//  }
-//}
+  h1 {
+    color: $red;
+  }
+
+  .width-80 {
+    width: 80%;
+  }
+
+  .gray {
+    background-color: $light-gray;
+    padding: 50px 0;
+    margin-top: -32px;
+
+    .our-mission {
+      margin: 40px auto 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .text {
+        width: 60%;
+      }
+
+      .image {
+        width: 30%;
+        margin: auto 0;
+        img {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  .why-our-solution-works {
+    text-align: center;
+    margin: 60px auto;
+
+    p {
+      font-size: $main-font;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .item {
+        width: 25%;
+        margin: 50px 10px;
+
+        i {
+          font-size: 50px;
+          padding: 20px;
+          border: 2px solid $red;
+          border-radius: 50%;
+        }
+
+        h3 {
+          font-size: 19px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .our-story-and-solution {
+    background-color: $light-gray;
+    width: 100%;
+
+    .width-80 {
+      margin: 60px auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .our-story {
+        width: 65%;
+      }
+
+      .solution-and-experience {
+        margin: 40px auto;
+        width: 30%;
+        background-color: $white;
+        text-align: center;
+
+        .our-solution {
+
+          h1 {
+            color: $black;
+            text-decoration: underline $red;
+          }
+
+          img {
+            width: 70%;
+            margin: 0 auto;
+          }
+        }
+
+        .experience-now {
+          h1 {
+            color: $black;
+          }
+          button {
+            display: block;
+            width: 90%;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: $dark-gray;
+            color: $white;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  .meet-our-leadership-team {
+    margin: 0 auto;
+
+    h1 {
+      color: $black;
+    }
+
+    hr {
+      float: left;
+      width: 50px;
+      border-top: 1px solid $red;
+      margin-top: -20px;
+    }
+
+    .members{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      transition: 5s ease;
+
+      .member {
+        width: 22%;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+          margin: 0 auto;
+          opacity: 0.8;
+        }
+
+        .tag {
+          background-color: $white;
+          position: absolute;
+          width: 75%;
+          height: 80px;
+          left: 10px;
+          right: 10px;
+          bottom: 10px;
+          margin: -17em auto 0;
+          padding: 5px 20px;
+          color: $black;
+          border-radius: 10px;
+
+          h1 {
+            font-size: 19px;
+            line-height: 0.3;
+          }
+
+          span {
+            display: block;
+          }
+
+          a {
+            float: right;
+            color: $black;
+            font-size: 12px;
+            text-decoration: none;
+
+            i {
+              margin-left: 5px;
+              font-size: 10px;
+            }
+          }
+        }
+
+        &:hover {
+          overflow: hidden;
+          img  {
+            transform: scale(1.1);
+          }
+          .tag {
+            a {
+              color: $red;
+              border-bottom: 1px solid $red;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .partners-say {
+    margin-bottom: 50px;
+    .sayings {
+      .m-l {
+        margin-left: 50px;
+      }
+      .m-r{
+        margin-right: 50px;
+      }
+
+      .saying{
+        margin-left: 3em;
+        &>img {
+          border-radius: 50%;
+        }
+        &>p {
+          margin-left: 40px;
+          width: 80%;
+
+          &>.name {
+            font-weight: bold;
+            display: block;
+            font-style: normal;
+            font-size: 15px;
+          }
+
+          &>.post {
+            display: block;
+            font-size: 12px;
+          }
+
+        }
+      }
+    }
+  }
+
+}

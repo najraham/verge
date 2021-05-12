@@ -103,6 +103,57 @@ body p {
   width: 80px;
 }
 
+.banner {
+  padding-top: 50px;
+  position: relative;
+  height: 100vh;
+}
+.banner .banner-img {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.banner .banner-img img {
+  width: 100%;
+  max-width: 100%;
+  clear: both;
+  display: block;
+  height: 99vh;
+}
+.banner .banner-desc {
+  position: absolute;
+  z-index: 1;
+  background-color: #ffffff;
+  margin-left: 10%;
+  width: 30vw;
+  border-radius: 10px;
+  padding: 25px 25px 30px;
+  height: 30%;
+  bottom: -50px;
+}
+.banner .banner-desc h1 {
+  font-size: 33px;
+  line-height: 29px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.banner .banner-desc button {
+  font-weight: bold;
+  float: right;
+  text-transform: uppercase;
+  background-color: #af0000;
+  color: white;
+  border: none;
+  height: 12%;
+  width: 50%;
+}
+.banner .pagination {
+  position: absolute;
+  z-index: 5;
+  bottom: -30%;
+  left: 50%;
+}
+
 .pagination {
   clear: both;
   width: 75px;
@@ -128,37 +179,28 @@ body p {
   background: #af0000;
 }
 
-.banner {
-  padding-top: 50px;
-  position: relative;
-  height: 100vh;
-}
-.banner .banner-img {
-  width: 100%;
-  z-index: -1;
-}
-.banner .banner-img img {
+.banner-home .banner-img img {
   max-width: 80%;
   height: 120vh;
   float: right;
 }
-.banner .banner-desc {
+.banner-home .banner-desc {
   position: absolute;
   z-index: 1;
   background-color: #ffffff;
   margin-left: 10%;
-  margin-top: 12%;
+  margin-top: 16%;
   width: 30vw;
   border-radius: 10px;
   padding: 25px 25px 30px;
   height: 50%;
 }
-.banner .banner-desc h1 {
+.banner-home .banner-desc h1 {
   font-size: 33px;
   line-height: 29px;
   color: #bf0000;
 }
-.banner .banner-desc button {
+.banner-home .banner-desc button {
   font-weight: bold;
   float: right;
   text-transform: uppercase;
@@ -168,7 +210,7 @@ body p {
   height: 12%;
   width: 50%;
 }
-.banner .pagination {
+.banner-home .pagination {
   position: absolute;
   z-index: 5;
   bottom: -30%;
@@ -366,6 +408,7 @@ body p {
   width: 90%;
   margin: 0 auto;
   color: #000000;
+  padding-top: 20px;
 }
 .partners-say .background-img {
   opacity: 0.15;
@@ -403,6 +446,205 @@ body p {
   border-left: 1px solid #af0000;
   height: 300px;
   margin-top: 0;
+}
+
+.main-content {
+  padding-top: 0;
+}
+.main-content h1 {
+  color: #af0000;
+}
+.main-content .width-80 {
+  width: 80%;
+}
+.main-content .gray {
+  background-color: #f0f0f0;
+  padding: 50px 0;
+  margin-top: -32px;
+}
+.main-content .gray .our-mission {
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.main-content .gray .our-mission .text {
+  width: 60%;
+}
+.main-content .gray .our-mission .image {
+  width: 30%;
+  margin: auto 0;
+}
+.main-content .gray .our-mission .image img {
+  width: 90%;
+}
+.main-content .why-our-solution-works {
+  text-align: center;
+  margin: 60px auto;
+}
+.main-content .why-our-solution-works p {
+  font-size: "Source Sans Pro", sans-serif;
+}
+.main-content .why-our-solution-works ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main-content .why-our-solution-works ul .item {
+  width: 25%;
+  margin: 50px 10px;
+}
+.main-content .why-our-solution-works ul .item i {
+  font-size: 50px;
+  padding: 20px;
+  border: 2px solid #af0000;
+  border-radius: 50%;
+}
+.main-content .why-our-solution-works ul .item h3 {
+  font-size: 19px;
+}
+.main-content .why-our-solution-works ul .item p {
+  font-size: 18px;
+}
+.main-content .our-story-and-solution {
+  background-color: #f0f0f0;
+  width: 100%;
+}
+.main-content .our-story-and-solution .width-80 {
+  margin: 60px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-content .our-story-and-solution .width-80 .our-story {
+  width: 65%;
+}
+.main-content .our-story-and-solution .width-80 .solution-and-experience {
+  margin: 40px auto;
+  width: 30%;
+  background-color: #ffffff;
+  text-align: center;
+}
+.main-content .our-story-and-solution .width-80 .solution-and-experience .our-solution h1 {
+  color: #000000;
+  text-decoration: underline #af0000;
+}
+.main-content .our-story-and-solution .width-80 .solution-and-experience .our-solution img {
+  width: 70%;
+  margin: 0 auto;
+}
+.main-content .our-story-and-solution .width-80 .solution-and-experience .experience-now h1 {
+  color: #000000;
+}
+.main-content .our-story-and-solution .width-80 .solution-and-experience .experience-now button {
+  display: block;
+  width: 90%;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #383a41;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+.main-content .meet-our-leadership-team {
+  margin: 0 auto;
+}
+.main-content .meet-our-leadership-team h1 {
+  color: #000000;
+}
+.main-content .meet-our-leadership-team hr {
+  float: left;
+  width: 50px;
+  border-top: 1px solid #af0000;
+  margin-top: -20px;
+}
+.main-content .meet-our-leadership-team .members {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: 5s ease;
+}
+.main-content .meet-our-leadership-team .members .member {
+  width: 22%;
+  position: relative;
+}
+.main-content .meet-our-leadership-team .members .member img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+.main-content .meet-our-leadership-team .members .member .tag {
+  background-color: #ffffff;
+  position: absolute;
+  width: 75%;
+  height: 80px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  margin: -17em auto 0;
+  padding: 5px 20px;
+  color: #000000;
+  border-radius: 10px;
+}
+.main-content .meet-our-leadership-team .members .member .tag h1 {
+  font-size: 19px;
+  line-height: 0.3;
+}
+.main-content .meet-our-leadership-team .members .member .tag span {
+  display: block;
+}
+.main-content .meet-our-leadership-team .members .member .tag a {
+  float: right;
+  color: #000000;
+  font-size: 12px;
+  text-decoration: none;
+}
+.main-content .meet-our-leadership-team .members .member .tag a i {
+  margin-left: 5px;
+  font-size: 10px;
+}
+.main-content .meet-our-leadership-team .members .member:hover {
+  overflow: hidden;
+}
+.main-content .meet-our-leadership-team .members .member:hover img {
+  transform: scale(1.1);
+}
+.main-content .meet-our-leadership-team .members .member:hover .tag a {
+  color: #af0000;
+  border-bottom: 1px solid #af0000;
+}
+.main-content .partners-say {
+  margin-bottom: 50px;
+}
+.main-content .partners-say .sayings .m-l {
+  margin-left: 50px;
+}
+.main-content .partners-say .sayings .m-r {
+  margin-right: 50px;
+}
+.main-content .partners-say .sayings .saying {
+  margin-left: 3em;
+}
+.main-content .partners-say .sayings .saying > img {
+  border-radius: 50%;
+}
+.main-content .partners-say .sayings .saying > p {
+  margin-left: 40px;
+  width: 80%;
+}
+.main-content .partners-say .sayings .saying > p > .name {
+  font-weight: bold;
+  display: block;
+  font-style: normal;
+  font-size: 15px;
+}
+.main-content .partners-say .sayings .saying > p > .post {
+  display: block;
+  font-size: 12px;
 }
 
 .footer {
