@@ -21,6 +21,7 @@
 .what-we-do-and-whats-new {
   width: 90%;
   margin: 0 auto 20px;
+  padding-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -53,7 +54,6 @@
   flex-direction: row;
   justify-content: space-around;
   padding: 40px;
-  width: 90%;
   margin: 0 auto;
 
   .interact {
@@ -128,25 +128,31 @@
 .case-study-and-white-papers {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 90%;
+  justify-content: space-between;
+  width: 99.5%;
   margin: 0 auto 70px;
 
   h1 {
     background-color: $white;
+    font-size: 19px;
   }
 
   .case-study {
-    width: 30%;
+    width: 32%;
     position: relative;
 
     h1 {
       width: 71%;
+      color: $black;
     }
   }
 
   .white-papers {
-    width: 60%;
+    width: 65%;
+
+    h1 {
+      color: $black;
+    }
 
     .papers {
       display: flex;
