@@ -61,7 +61,7 @@ body p {
   position: absolute;
   background-color: #ffffff;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
   opacity: 0.87;
@@ -488,7 +488,7 @@ body p {
   margin: 60px auto;
 }
 .main-content .why-our-solution-works p {
-  font-size: "Source Sans Pro", sans-serif;
+  font-size: 20px;
 }
 .main-content .why-our-solution-works ul {
   list-style: none;
@@ -652,10 +652,10 @@ body p {
   font-size: 12px;
 }
 
-.main-content .gray {
+.main-content .white {
   background-color: #ffffff;
 }
-.main-content .gray .our-mission .image {
+.main-content .white .our-mission .image {
   float: left;
   margin-top: 40px;
 }
