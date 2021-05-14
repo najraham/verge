@@ -1,0 +1,101 @@
+.main-content{
+  .first-p {
+    margin: 70px auto;
+
+    p {
+      text-align: center;
+      font-size: 21px;
+    }
+  }
+
+  .bg-gray {
+    .demo-video {
+      padding-top: inherit;
+      width: 55%;
+
+      h1 {
+        background-color: $light-gray;
+      }
+
+      .demo {
+        text-align: left;
+        h1, p {
+          text-align: left;
+          margin-left: 0;
+        }
+        img {
+          width: 100%;
+          margin: 0 auto 60px;
+        }
+        button {
+          font-weight: bold;
+          text-transform: uppercase;
+          background-color: $red;
+          color: white;
+          border: none;
+          height: 40px;
+          width: 200px;
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .interact {
+      width: 35%;
+    }
+  }
+
+  .what-we-do-and-whats-new {
+
+    .what-we-do {
+      width: 55%;
+      margin: auto 0;
+
+      h1 {
+        text-transform: none;
+      }
+
+      button {
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: $red;
+        color: white;
+        border: none;
+        height: 40px;
+        width: 200px;
+        margin-top: 20px;
+      }
+    }
+
+    .whats-new {
+      width: 40%;
+
+      h1 {
+        color: $black;
+      }
+
+      img {
+        width: 90%;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      button {
+        margin-top: 0;
+        width: 90%;
+        height: 50px;
+        font-size: $default-font-size;
+        text-transform: uppercase;
+        background-color: $dark-gray;
+        color: $white;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .signup {
+    .tag {
+      height: 30%;
+    }
+  }
+}
