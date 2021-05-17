@@ -917,6 +917,106 @@ body p {
   height: 30%;
 }
 
+.main-content .question-box {
+  margin: 50px auto;
+  height: 250px;
+}
+.main-content .question-box h1 {
+  color: #000000;
+}
+.main-content .question-box #search {
+  border: 0;
+  width: 350px;
+}
+.main-content .question-box #search::placeholder {
+  color: #aeaeae;
+  font-size: 18px;
+}
+.main-content .question-box .searchbox {
+  padding-left: 5px;
+  border: 1px solid #aeaeae;
+  color: #aeaeae;
+  width: 417px;
+  height: 45px;
+}
+.main-content .question-box .searchbox button {
+  border: none;
+  color: #ffffff;
+  background: #000000;
+  font-size: 25px;
+  width: 60px;
+  height: 45px;
+  top: 0;
+  right: 0;
+}
+.main-content .question-box img {
+  width: 40%;
+  float: right;
+  margin-top: -110px;
+}
+.main-content .question-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px auto 0;
+  height: 550px;
+}
+.main-content .question-list .left, .main-content .question-list .right {
+  width: 45%;
+}
+.main-content .question-list p {
+  padding: 15px;
+  font-weight: bold;
+  background-color: #e7e7e7;
+  transition: 0.2s ease-in-out;
+}
+.main-content .question-list p i {
+  float: right;
+}
+.main-content .question-list p:hover {
+  background-color: #ffffff;
+  color: #af0000;
+  box-shadow: 0 0 10px #e7e7e7;
+}
+.main-content .question-list .vertical-line {
+  border-left: 1px solid #af0000;
+  height: 90%;
+  margin-top: -9px;
+}
+.main-content .circle {
+  border: 1px solid #af0000;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+.main-content .questions {
+  background-color: #e7e7e7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.main-content .questions .headings h1 {
+  color: #383a41;
+  font-weight: initial;
+}
+.main-content .questions .headings h1:first-of-type {
+  color: #000000;
+  font-weight: bold;
+}
+.main-content .questions i {
+  font-size: 33px;
+  color: #383a41;
+  margin: auto 0;
+  width: 5%;
+}
+.main-content .questions img {
+  width: 25%;
+}
+.main-content .signup {
+  margin-top: 0;
+}
+
 .footer {
   width: 95%;
   display: flex;
@@ -1014,6 +1114,10 @@ body p {
 .footer footer .right ul li {
   display: inline-block;
   margin: 0 20px;
+}
+.footer footer .right ul li a {
+  text-decoration: none;
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

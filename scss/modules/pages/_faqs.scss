@@ -1,0 +1,119 @@
+.main-content {
+  .question-box {
+    margin: 50px auto;
+    height: 250px;
+
+    h1 {
+      color: $black;
+    }
+    #search {
+      border: 0;
+      width: 350px;
+
+      &::placeholder {
+        color: $gray;
+        font-size: 18px;
+      }
+    }
+
+    .searchbox {
+      padding-left: 5px;
+      border: 1px solid $gray;
+      color: $gray;
+      width: 417px;
+      height: 45px;
+
+      button {
+        border: none;
+        color: $white;
+        background: $black;
+        font-size: 25px;
+        width: 60px;
+        height: 45px;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    img {
+      width: 40%;
+      float: right;
+      margin-top: -110px;
+    }
+  }
+
+  .question-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px auto 0;
+    height: 550px;
+
+    .left, .right {
+      width: 45%;
+    }
+
+    p {
+      padding: 15px;
+      font-weight: bold;
+      background-color: $light-gray;
+      transition: 0.2s ease-in-out;
+
+      i {
+        float: right;
+      }
+
+      &:hover {
+        background-color: $white;
+        color: $red;
+        box-shadow: 0 0 10px $light-gray;
+      }
+    }
+
+    .vertical-line {
+      border-left: 1px solid $red;
+      height: 90%;
+      margin-top: -9px;
+    }
+  }
+
+  .circle {
+    border: 1px solid $red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+
+  .questions {
+    background-color: $light-gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .headings {
+      h1 {
+        color: $dark-gray;
+        font-weight: initial;
+      }
+      h1:first-of-type {
+        color: $black;
+        font-weight: bold;
+      }
+    }
+
+    i {
+      font-size: $header-font-size;
+      color: $dark-gray;
+      margin: auto 0;
+      width: 5%;
+    }
+
+    img {
+      width: 25%;
+    }
+  }
+  .signup {
+    margin-top: 0;
+  }
+}
