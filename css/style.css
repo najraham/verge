@@ -36,6 +36,7 @@ body p {
 .navbar a {
   text-decoration: none;
   color: #000000;
+  cursor: pointer;
 }
 .navbar .nav-logo {
   width: 30%;
@@ -69,6 +70,7 @@ body p {
 .navbar .nav-list .dropdown-content a {
   display: block;
   height: 40px;
+  cursor: pointer;
 }
 .navbar .nav-list .dropdown:hover span {
   transform: scale(1.1);
@@ -174,6 +176,7 @@ body p {
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+  cursor: pointer;
 }
 .pagination li a.active {
   background: #af0000;
@@ -411,6 +414,7 @@ body p {
 .case-study-and-white-papers .tag button a {
   text-decoration: none;
   color: #af0000;
+  cursor: pointer;
 }
 
 .partners-say {
@@ -612,6 +616,7 @@ body p {
   color: #000000;
   font-size: 12px;
   text-decoration: none;
+  cursor: pointer;
 }
 .main-content .meet-our-leadership-team .members .member .tag a i {
   margin-left: 5px;
@@ -626,6 +631,7 @@ body p {
 .main-content .meet-our-leadership-team .members .member:hover .tag a {
   color: #af0000;
   border-bottom: 1px solid #af0000;
+  cursor: pointer;
 }
 .main-content .partners-say {
   margin-bottom: 50px;
@@ -754,6 +760,7 @@ body p {
   display: none;
   padding-top: 12px;
   text-decoration: none;
+  cursor: pointer;
 }
 .discover-a-solution-that-works-for-you .departments .department:first-child .tag {
   margin-bottom: 90px;
@@ -763,6 +770,7 @@ body p {
 }
 .discover-a-solution-that-works-for-you .departments .department:first-child .tag a {
   display: block;
+  cursor: pointer;
 }
 .discover-a-solution-that-works-for-you .departments .dept-hover:hover {
   overflow: hidden;
@@ -775,6 +783,7 @@ body p {
 }
 .discover-a-solution-that-works-for-you .departments .dept-hover:hover .tag a {
   display: block;
+  cursor: pointer;
 }
 
 .signup {
@@ -1050,6 +1059,7 @@ body p {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 16px;
+  cursor: pointer;
 }
 .main-content .case-studies .numbers {
   display: inline;
@@ -1199,6 +1209,7 @@ body p {
 .footer footer .right ul li a {
   text-decoration: none;
   color: #000000;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
