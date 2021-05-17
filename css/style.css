@@ -390,6 +390,7 @@ body p {
   color: #000000;
 }
 .case-study-and-white-papers .tag h1 {
+  width: 90%;
   font-size: 19px;
   margin: 0 auto;
   font-weight: bold;
@@ -403,8 +404,12 @@ body p {
   font-size: 19px;
   border: 1px solid #af0000;
   background-color: #ffffff;
-  width: 53%;
+  width: 60%;
   height: 40px;
+  color: #af0000;
+}
+.case-study-and-white-papers .tag button a {
+  text-decoration: none;
   color: #af0000;
 }
 
@@ -1015,6 +1020,82 @@ body p {
 }
 .main-content .signup {
   margin-top: 0;
+}
+
+.main-content {
+  margin-top: 80px;
+}
+.main-content .case-studies {
+  background-color: #e7e7e7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  margin: 0 auto 30px;
+}
+.main-content .case-studies .description {
+  width: 35%;
+}
+.main-content .case-studies .description h1 {
+  color: #383a41;
+}
+.main-content .case-studies .description button {
+  background-color: #af0000;
+  height: 45px;
+  width: 200px;
+  border: none;
+}
+.main-content .case-studies .description button a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.main-content .case-studies .numbers {
+  display: inline;
+}
+.main-content .case-studies .numbers .number {
+  display: inline;
+  margin-top: -50px;
+  padding: 0;
+  font-size: 300px;
+  color: #e7e7e7;
+  text-shadow: -4px 0 #af0000, 0 4px #af0000, 4px 0 #af0000, 0 -4px #af0000;
+}
+.main-content .case-studies img {
+  z-index: 1;
+  margin-left: -50px;
+  margin-bottom: -80px;
+}
+.main-content .stroked-header {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-content .stroked-header h1 {
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 25px;
+  width: 70%;
+}
+.main-content .stroked-header .more-about-launch-pad {
+  width: 49%;
+}
+.main-content .stroked-header .more-about-launch-pad img {
+  width: 95%;
+  box-shadow: 0 0 10px #e7e7e7;
+  border-radius: 10px;
+}
+.main-content .stroked-header .view-demo-video {
+  width: 49%;
+}
+.main-content .stroked-header .view-demo-video video {
+  display: block;
+  width: 95%;
+  height: 280px;
+  box-shadow: 0 0 10px #e7e7e7;
+  border-radius: 10px;
 }
 
 .footer {

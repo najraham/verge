@@ -197,6 +197,7 @@
     color: $black;
 
     h1 {
+      width: 90%;
       font-size: 19px;
       margin: 0 auto;
       font-weight: bold;
@@ -212,9 +213,14 @@
       font-size: 19px;
       border: 1px solid $red;
       background-color: $white;
-      width: 53%;
+      width: 60%;
       height: 40px;
       color: $red;
+
+      a {
+        text-decoration: none;
+        color: $red;
+      }
     }
   }
 }
