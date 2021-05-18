@@ -8,6 +8,10 @@ body {
   width: 100%;
   margin: 0 auto;
 
+    a:hover {
+      cursor: pointer;
+    }
+
   p {
     font-size: $default-font-size;
   }

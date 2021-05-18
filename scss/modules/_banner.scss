@@ -73,9 +73,6 @@
       text-indent: -10000px;
       background: $light-gray;
       border-radius: 10px;
-      -moz-border-radius: 10px;
-      -webkit-border-radius: 10px;
-      cursor: pointer;
 
       &.active {
         background: $red;

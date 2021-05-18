@@ -8,6 +8,9 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+body a:hover {
+  cursor: pointer;
+}
 body p {
   font-size: 20px;
 }
@@ -36,7 +39,6 @@ body p {
 .navbar a {
   text-decoration: none;
   color: #000000;
-  cursor: pointer;
 }
 .navbar .nav-logo {
   width: 30%;
@@ -70,7 +72,6 @@ body p {
 .navbar .nav-list .dropdown-content a {
   display: block;
   height: 40px;
-  cursor: pointer;
 }
 .navbar .nav-list .dropdown:hover span {
   transform: scale(1.1);
@@ -174,9 +175,6 @@ body p {
   text-indent: -10000px;
   background: #e7e7e7;
   border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  cursor: pointer;
 }
 .pagination li a.active {
   background: #af0000;
@@ -414,7 +412,6 @@ body p {
 .case-study-and-white-papers .tag button a {
   text-decoration: none;
   color: #af0000;
-  cursor: pointer;
 }
 
 .partners-say {
@@ -474,7 +471,7 @@ body p {
 .main-content .gray {
   background-color: #e7e7e7;
   padding: 50px 0;
-  margin-top: -32px;
+  margin-top: -90px;
 }
 .main-content .gray .our-mission {
   margin: 40px auto 0;
@@ -616,7 +613,6 @@ body p {
   color: #000000;
   font-size: 12px;
   text-decoration: none;
-  cursor: pointer;
 }
 .main-content .meet-our-leadership-team .members .member .tag a i {
   margin-left: 5px;
@@ -631,7 +627,6 @@ body p {
 .main-content .meet-our-leadership-team .members .member:hover .tag a {
   color: #af0000;
   border-bottom: 1px solid #af0000;
-  cursor: pointer;
 }
 .main-content .partners-say {
   margin-bottom: 50px;
@@ -760,7 +755,6 @@ body p {
   display: none;
   padding-top: 12px;
   text-decoration: none;
-  cursor: pointer;
 }
 .discover-a-solution-that-works-for-you .departments .department:first-child .tag {
   margin-bottom: 90px;
@@ -770,7 +764,6 @@ body p {
 }
 .discover-a-solution-that-works-for-you .departments .department:first-child .tag a {
   display: block;
-  cursor: pointer;
 }
 .discover-a-solution-that-works-for-you .departments .dept-hover:hover {
   overflow: hidden;
@@ -783,7 +776,6 @@ body p {
 }
 .discover-a-solution-that-works-for-you .departments .dept-hover:hover .tag a {
   display: block;
-  cursor: pointer;
 }
 
 .signup {
@@ -1059,7 +1051,6 @@ body p {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 16px;
-  cursor: pointer;
 }
 .main-content .case-studies .numbers {
   display: inline;
@@ -1106,6 +1097,96 @@ body p {
   height: 280px;
   box-shadow: 0 0 10px #e7e7e7;
   border-radius: 10px;
+}
+
+.pricing {
+  text-align: center;
+  margin: 0 auto;
+}
+.pricing h1 {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+.pricing p {
+  text-align: center;
+  margin-top: 0;
+}
+.pricing .pricing-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: end;
+}
+.pricing .pricing-list ul {
+  width: 20%;
+  list-style: none;
+}
+.pricing .pricing-list ul li {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.pricing .pricing-list .bars {
+  width: 78%;
+  position: relative;
+}
+.pricing .pricing-list .bars .bar {
+  background-color: #ffffff;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #aeaeae;
+  overflow: hidden;
+}
+.pricing .pricing-list .bars .bar .header {
+  background-color: #383a41;
+  color: #ffffff;
+  padding-top: 20px;
+}
+.pricing .pricing-list .bars .bar .header i {
+  font-size: 30px;
+}
+.pricing .pricing-list .bars .bar .header h2 {
+  text-transform: uppercase;
+}
+.pricing .pricing-list .bars .bar .body span {
+  text-transform: uppercase;
+}
+.pricing .pricing-list .bars .bar .body p {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.pricing .pricing-list .bars .bar .body ul {
+  width: 95%;
+  margin: 0 auto;
+  padding-left: 0;
+}
+.pricing .pricing-list .bars .bar .body ul li {
+  text-align: center;
+}
+.pricing .pricing-list .bars .bar .body ul li i {
+  color: #af0000;
+}
+.pricing .pricing-list .bars .bar1 {
+  margin-right: -10px;
+  display: inline-block;
+  z-index: -1;
+}
+.pricing .pricing-list .bars .bar2 {
+  display: inline-block;
+  z-index: 25;
+}
+.pricing .pricing-list .bars .bar2 > header {
+  background-color: #af0000;
+}
+.pricing .pricing-list .bars .bar3 {
+  position: absolute;
+  margin-left: -10px;
+  display: inline-block;
+  z-index: -1;
 }
 
 .footer {
@@ -1209,7 +1290,6 @@ body p {
 .footer footer .right ul li a {
   text-decoration: none;
   color: #000000;
-  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
