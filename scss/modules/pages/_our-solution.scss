@@ -103,6 +103,10 @@
                     display: none;
                     padding-top: 12px;
                     text-decoration: none;
+
+                    &:hover {
+                        cursor: default;
+                    }
                 }
             }
 
@@ -113,6 +117,10 @@
                     }
                     a {
                         display: block;
+
+                        &:hover {
+                            cursor: default;
+                        }
                     }
                     margin-bottom: 90px;
                 }
@@ -130,6 +138,10 @@
                 }
                 a {
                     display: block;
+
+                    &:hover {
+                        cursor: default;
+                    }
                 }
             }
         }

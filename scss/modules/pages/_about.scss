@@ -183,6 +183,10 @@
             font-size: 12px;
             text-decoration: none;
 
+            &:hover {
+              cursor: default;
+            }
+
             i {
               margin-left: 5px;
               font-size: 10px;
@@ -199,6 +203,9 @@
             a {
               color: $red;
               border-bottom: 1px solid $red;
+              &:hover {
+                cursor: default;
+              }
             }
           }
         }

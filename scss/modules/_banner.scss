@@ -74,6 +74,10 @@
       background: $light-gray;
       border-radius: 10px;
 
+      &:hover {
+        cursor: default;
+      }
+
       &.active {
         background: $red;
       }
