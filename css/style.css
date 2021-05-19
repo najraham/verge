@@ -139,6 +139,7 @@ body p {
   padding: 25px 25px 30px;
   height: 30%;
   bottom: -50px;
+  opacity: 0.85;
 }
 .banner .banner-desc h1 {
   font-size: 33px;
@@ -1338,6 +1339,161 @@ body p {
   color: #000000;
   background-color: #e6e6e6;
   font-weight: bold;
+}
+
+.case-detail {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.case-detail .p1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.case-detail .p1 p {
+  width: 60%;
+}
+.case-detail .p1 .image {
+  width: 35%;
+  margin-top: 25px;
+}
+.case-detail .p1 .image img {
+  width: 90%;
+}
+.case-detail .thought {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+.case-detail .thought p {
+  color: #af0000;
+  margin-bottom: 0;
+}
+.case-detail .thought span {
+  font-size: 20px;
+}
+.case-detail .result h2 {
+  margin: 50px 0 30px;
+}
+.case-detail .result .tb {
+  border-radius: 10px;
+  box-shadow: 0 0 10px #aeaeae;
+  overflow: hidden;
+  margin: 50px 0;
+}
+.case-detail .result .tb table {
+  border-collapse: collapse;
+}
+.case-detail .result .tb table tr {
+  border-bottom: 1px solid #ffffff;
+  width: 100%;
+  height: 80px;
+}
+.case-detail .result .tb table tr .col1, .case-detail .result .tb table tr .colh1 {
+  width: 19.5%;
+}
+.case-detail .result .tb table tr .col2, .case-detail .result .tb table tr .colh2 {
+  width: 20%;
+  background-color: #efefef;
+}
+.case-detail .result .tb table tr .col3, .case-detail .result .tb table tr .colh3 {
+  width: 20%;
+}
+.case-detail .result .tb table tr .col4, .case-detail .result .tb table tr .colh4 {
+  width: 40%;
+  background-color: #efefef;
+}
+.case-detail .result .tb table tr .colh2, .case-detail .result .tb table tr .colh4 {
+  background-color: #af0000;
+}
+.case-detail .result .tb table tr th {
+  text-align: center;
+  background-color: #af0000;
+  height: 110px;
+  font-size: 33px;
+  color: #ffffff;
+  text-transform: capitalize;
+  border-right: 1px solid #ffffff;
+}
+.case-detail .result .tb table tr td {
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  border-right: 1px solid #ffffff;
+}
+.case-detail .result .tb table tr:first-of-type {
+  border-bottom: none;
+}
+.case-detail .result .tb table tr:nth-child(2) {
+  height: 150px;
+}
+.case-detail .result .photo {
+  box-shadow: 0 0 10px #aeaeae;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 50px 0;
+}
+.case-detail .result .photo img {
+  width: 49%;
+}
+.case-detail .result button {
+  background-color: #af0000;
+  border: none;
+  border-radius: 5px;
+  height: 45px;
+  width: 190px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 50px auto;
+  display: block;
+}
+
+.other-case-studies {
+  margin: 70px auto;
+}
+.other-case-studies h1 {
+  background-color: #ffffff;
+  color: #000000;
+}
+.other-case-studies .cases {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.other-case-studies .cases .case {
+  border-radius: 10px;
+  box-shadow: 0 0 10px #aeaeae;
+  width: 43%;
+  padding: 20px;
+}
+.other-case-studies .cases .case img {
+  width: 50%;
+  margin: 0 auto;
+}
+.other-case-studies .cases .case h1 {
+  color: #383a41;
+  width: 80%;
+  margin-top: 10px;
+}
+.other-case-studies .cases .case button {
+  background-color: #af0000;
+  border: none;
+  border-radius: 5px;
+  height: 45px;
+  width: 190px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .footer {
