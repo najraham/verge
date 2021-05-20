@@ -196,6 +196,7 @@
 #basic-features {
   h1 {
     text-align: center;
+    margin-top: 70px;
   }
   table {
     margin: 0 auto;
@@ -230,6 +231,54 @@
         color: $black;
         background-color: #e6e6e6;
         font-weight: bold;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $break-point) {
+  .pricing {
+    width: 95%;
+    .pricing-list {
+      .links {
+        width: 22%;
+      }
+
+      #left {
+        width: 78%;
+        .bar1, .bar2, .bar3 {
+          width: 33%;
+
+            button {
+              //margin-bottom: -25px;
+              width: 90%;
+              height: 50px;
+              background-color: $white;
+              color: $dark-gray;
+              border: 1px solid $dark-gray;
+              border-radius: 5px;
+              font-size: $default-font-size;
+              text-transform: uppercase;
+              font-weight: bold;
+            }
+          }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 945px) {
+  .pricing {
+    .pricing-list {
+      flex-direction: column;
+      .links {
+        width: 80%;
+        margin-top: 0;
+        text-align: center;
+      }
+
+      #left {
+        width: 100%;
       }
     }
   }

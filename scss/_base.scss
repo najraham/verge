@@ -25,3 +25,9 @@ body {
     text-transform: uppercase;
   }
 }
+
+@media screen and (max-width: $break-point) {
+  body p {
+    font-size: 15px;
+  }
+}

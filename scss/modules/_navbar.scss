@@ -30,7 +30,7 @@
   }
 
   .navbar-menu {
-    flex: 1 0 47%;
+    flex: 1 0 40%;
 
     .dropdown-menu {
       display: none;
@@ -84,8 +84,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    flex: 1 0 12%;
+    justify-content: flex-end;
+    flex: 1 0 19%;
     padding: 5px;
 
     #login {

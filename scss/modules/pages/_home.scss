@@ -191,7 +191,7 @@
     height: 250px;
     left: 0;
     right: 0;
-    bottom: 10px;
+    bottom: 15px;
     margin: -17em auto 0;
     padding: 20px;
     color: $black;
@@ -213,7 +213,6 @@
       font-size: 19px;
       border: 1px solid $red;
       background-color: $white;
-      width: 60%;
       height: 40px;
       color: $red;
 
@@ -281,7 +280,7 @@
   }
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: $break-point) {
   .main-content {
     .header-with-strike {
       width: 100%;
@@ -307,11 +306,12 @@
       .whats-new,
       .case-study,
       .white-papers{
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
 
         p {
           width: 100%;
+          font-size: 15px;
         }
       }
     }

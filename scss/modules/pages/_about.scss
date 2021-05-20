@@ -160,9 +160,9 @@
           position: absolute;
           width: 75%;
           height: 80px;
-          left: 10px;
-          right: 10px;
-          bottom: 10px;
+          left: 2%;
+          right: 2%;
+          bottom: 2%;
           margin: -17em auto 0;
           padding: 5px 20px;
           color: $black;
@@ -192,6 +192,7 @@
               font-size: 10px;
             }
           }
+
           .modal-window {
             position: fixed;
             background-color: rgb($dark-gray,0.75);
@@ -211,7 +212,6 @@
               display: flex;
               flex-direction: row;
               justify-content: space-between;
-              flex-wrap: wrap;
               width: 80%;
               height: 80vh;
               position: absolute;
@@ -222,7 +222,7 @@
               background: white;
 
               &>div {
-                flex: 1 0 50%;
+                flex: 1 1 50%;
                 margin-left: 20px;
                 display: flex;
                 flex-direction: column;
@@ -241,6 +241,13 @@
                   i {
                     font-size: inherit;
                   }
+                  h1 {
+                     margin-top: 50px;
+                     font-size: $header-font-size;
+                   }
+                  span {
+                    font-size: 18px;
+                  }
                 }
 
                 .modal-close {
@@ -253,13 +260,6 @@
                   text-transform: uppercase;
                   writing-mode: tb-rl;
                   transform: rotate(-180deg);
-                }
-                h1 {
-                  margin-top: 50px;
-                  font-size: $header-font-size;
-                }
-                span {
-                  font-size: 18px;
                 }
               }
 
@@ -278,21 +278,6 @@
               margin: 0 0 15px;
             }
           }
-
-          //.modal-close {
-          //  color: #aaa;
-          //  line-height: 50px;
-          //  font-size: 80%;
-          //  position: absolute;
-          //  right: 0;
-          //  text-align: center;
-          //  top: 0;
-          //  width: 70px;
-          //  text-decoration: none;
-          //  &:hover {
-          //    color: black;
-          //  }
-          //}
         }
 
         &:hover {
@@ -331,7 +316,7 @@
           border-radius: 50%;
         }
         &>p {
-          margin-left: 40px;
+          margin: 0 auto ;
           width: 80%;
 
           &>.name {
@@ -346,6 +331,67 @@
             font-size: 12px;
           }
 
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $break-point) {
+  .main-content {
+    .gray {
+      .our-mission{
+        flex-direction: column;
+
+        .text, .image {
+          margin: 0 auto;
+          text-align: center;
+          width: 90%;
+        }
+      }
+    }
+
+    .our-story-and-solution {
+      .width-80 {
+        flex-direction: column;
+
+        .our-story, .solution-and-experience {
+          text-align: center;
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .meet-our-leadership-team{
+      .members {
+        flex-wrap: wrap;
+
+        .member {
+          width: 45%;
+          margin: 0 auto;
+
+          .tag {
+            .modal-window>div {
+              height: 90vh;
+
+              &>div {
+                p {
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .partners-say {
+      .sayings {
+        .saying{
+          &>p {
+            font-size: 15px;
+          }
         }
       }
     }

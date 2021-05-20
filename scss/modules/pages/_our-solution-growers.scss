@@ -92,15 +92,9 @@
       }
     }
   }
-
-  .signup {
-    .tag {
-      height: 30%;
-    }
-  }
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: $break-point) {
   .main-content {
     .header-with-strike {
       width: 100%;
@@ -113,13 +107,18 @@
     .bg-gray, .what-we-do-and-whats-new {
       flex-direction: column;
 
-      .interact, .get-started, .what-we-do, .whats-new {
+      .interact, .get-started, .what-we-do, .whats-new, .demo-video {
         width: 100%;
         margin: 0 auto;
 
         p {
           width: 100%;
+          font-size: 15px;
         }
+      }
+
+      .whats-new {
+        margin-top: 20px;
       }
     }
   }
