@@ -280,3 +280,40 @@
     }
   }
 }
+
+@media screen and (max-width: 1020px) {
+  .main-content {
+    .header-with-strike {
+      width: 100%;
+
+      hr {
+        width: 100%;
+      }
+    }
+
+    .bg-gray,
+    .what-we-do-and-whats-new,
+    .case-study-and-white-papers{
+      flex-direction: column;
+
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+
+      .interact,
+      .get-started,
+      .what-we-do,
+      .whats-new,
+      .case-study,
+      .white-papers{
+        width: 100%;
+        margin: 0 auto;
+
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

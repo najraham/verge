@@ -99,3 +99,28 @@
     }
   }
 }
+
+@media screen and (max-width: 1020px) {
+  .main-content {
+    .header-with-strike {
+      width: 100%;
+
+      hr {
+        width: 100%;
+      }
+    }
+
+    .bg-gray, .what-we-do-and-whats-new {
+      flex-direction: column;
+
+      .interact, .get-started, .what-we-do, .whats-new {
+        width: 100%;
+        margin: 0 auto;
+
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

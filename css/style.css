@@ -44,25 +44,30 @@ body p {
   cursor: default;
 }
 .navbar .nav-logo {
-  width: 30%;
+  width: 20%;
 }
 .navbar .nav-logo .logo {
   width: 100px;
-  margin-left: 80px;
+  margin-left: 70px;
 }
-.navbar .nav-list {
+.navbar .navbar-menu {
+  flex: 1 0 47%;
+}
+.navbar .navbar-menu .dropdown-menu {
+  display: none;
+}
+.navbar .navbar-menu .nav-list {
   list-style: none;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  flex: 1 0 47%;
 }
-.navbar .nav-list .dropdown {
+.navbar .navbar-menu .nav-list .dropdown {
   position: relative;
   display: inline-block;
 }
-.navbar .nav-list .dropdown-content {
+.navbar .navbar-menu .nav-list .dropdown-content {
   display: none;
   position: absolute;
   background-color: #ffffff;
@@ -72,18 +77,18 @@ body p {
   z-index: 1;
   opacity: 0.87;
 }
-.navbar .nav-list .dropdown-content a {
+.navbar .navbar-menu .nav-list .dropdown-content a {
   display: block;
   height: 40px;
 }
-.navbar .nav-list .dropdown-content a:hover {
+.navbar .navbar-menu .nav-list .dropdown-content a:hover {
   cursor: default;
 }
-.navbar .nav-list .dropdown:hover span {
+.navbar .navbar-menu .nav-list .dropdown:hover span {
   transform: scale(1.1);
   font-weight: bold;
 }
-.navbar .nav-list .dropdown:hover .dropdown-content {
+.navbar .navbar-menu .nav-list .dropdown:hover .dropdown-content {
   display: block;
 }
 .navbar .login-signup {
@@ -112,6 +117,49 @@ body p {
   width: 80px;
 }
 
+@media screen and (max-width: 750px) {
+  .navbar .navbar-menu .dropdown-menu {
+    text-align: right;
+    display: block;
+  }
+  .navbar .menu-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .navbar .menu-dropdown-content {
+    right: 0;
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    opacity: 0.87;
+  }
+  .navbar .menu-dropdown-content .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar .menu-dropdown-content .nav-list li {
+    margin: 10px;
+  }
+  .navbar .menu-dropdown-content .nav-list li a {
+    height: inherit;
+  }
+  .navbar .menu-dropdown-content a {
+    display: block;
+    height: 40px;
+  }
+  .navbar .menu-dropdown-content a:hover {
+    cursor: default;
+  }
+  .navbar .menu-dropdown:hover .menu-dropdown-content {
+    display: block;
+  }
+}
 .banner {
   padding-top: 50px;
   position: relative;
@@ -204,7 +252,6 @@ body p {
   width: 35vw;
   border-radius: 10px;
   padding: 25px 25px 30px;
-  height: 50%;
 }
 .banner-home .banner-desc h1 {
   font-size: 33px;
@@ -218,13 +265,13 @@ body p {
   background-color: #af0000;
   color: white;
   border: none;
-  height: 12%;
+  height: 40px;
   width: 50%;
 }
 .banner-home .pagination {
   position: absolute;
   z-index: 5;
-  bottom: -30%;
+  bottom: -40%;
   left: 50%;
 }
 
@@ -472,6 +519,66 @@ body p {
   margin-top: 0;
 }
 
+@media screen and (max-width: 1020px) {
+  .main-content .header-with-strike {
+    width: 100%;
+  }
+  .main-content .header-with-strike hr {
+    width: 100%;
+  }
+  .main-content .bg-gray,
+.main-content .what-we-do-and-whats-new,
+.main-content .case-study-and-white-papers {
+    flex-direction: column;
+  }
+  .main-content .bg-gray img,
+.main-content .what-we-do-and-whats-new img,
+.main-content .case-study-and-white-papers img {
+    margin: 0 auto;
+    display: block;
+  }
+  .main-content .bg-gray .interact,
+.main-content .bg-gray .get-started,
+.main-content .bg-gray .what-we-do,
+.main-content .bg-gray .whats-new,
+.main-content .bg-gray .case-study,
+.main-content .bg-gray .white-papers,
+.main-content .what-we-do-and-whats-new .interact,
+.main-content .what-we-do-and-whats-new .get-started,
+.main-content .what-we-do-and-whats-new .what-we-do,
+.main-content .what-we-do-and-whats-new .whats-new,
+.main-content .what-we-do-and-whats-new .case-study,
+.main-content .what-we-do-and-whats-new .white-papers,
+.main-content .case-study-and-white-papers .interact,
+.main-content .case-study-and-white-papers .get-started,
+.main-content .case-study-and-white-papers .what-we-do,
+.main-content .case-study-and-white-papers .whats-new,
+.main-content .case-study-and-white-papers .case-study,
+.main-content .case-study-and-white-papers .white-papers {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main-content .bg-gray .interact p,
+.main-content .bg-gray .get-started p,
+.main-content .bg-gray .what-we-do p,
+.main-content .bg-gray .whats-new p,
+.main-content .bg-gray .case-study p,
+.main-content .bg-gray .white-papers p,
+.main-content .what-we-do-and-whats-new .interact p,
+.main-content .what-we-do-and-whats-new .get-started p,
+.main-content .what-we-do-and-whats-new .what-we-do p,
+.main-content .what-we-do-and-whats-new .whats-new p,
+.main-content .what-we-do-and-whats-new .case-study p,
+.main-content .what-we-do-and-whats-new .white-papers p,
+.main-content .case-study-and-white-papers .interact p,
+.main-content .case-study-and-white-papers .get-started p,
+.main-content .case-study-and-white-papers .what-we-do p,
+.main-content .case-study-and-white-papers .whats-new p,
+.main-content .case-study-and-white-papers .case-study p,
+.main-content .case-study-and-white-papers .white-papers p {
+    width: 100%;
+  }
+}
 .main-content {
   padding-top: 0;
 }
@@ -1030,6 +1137,24 @@ body p {
   height: 30%;
 }
 
+@media screen and (max-width: 1020px) {
+  .main-content .header-with-strike {
+    width: 100%;
+  }
+  .main-content .header-with-strike hr {
+    width: 100%;
+  }
+  .main-content .bg-gray, .main-content .what-we-do-and-whats-new {
+    flex-direction: column;
+  }
+  .main-content .bg-gray .interact, .main-content .bg-gray .get-started, .main-content .bg-gray .what-we-do, .main-content .bg-gray .whats-new, .main-content .what-we-do-and-whats-new .interact, .main-content .what-we-do-and-whats-new .get-started, .main-content .what-we-do-and-whats-new .what-we-do, .main-content .what-we-do-and-whats-new .whats-new {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main-content .bg-gray .interact p, .main-content .bg-gray .get-started p, .main-content .bg-gray .what-we-do p, .main-content .bg-gray .whats-new p, .main-content .what-we-do-and-whats-new .interact p, .main-content .what-we-do-and-whats-new .get-started p, .main-content .what-we-do-and-whats-new .what-we-do p, .main-content .what-we-do-and-whats-new .whats-new p {
+    width: 100%;
+  }
+}
 .main-content .question-box {
   margin: 50px auto;
   height: 250px;
