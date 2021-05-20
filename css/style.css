@@ -595,7 +595,7 @@ body p {
   width: 22%;
   position: relative;
 }
-.main-content .meet-our-leadership-team .members .member img {
+.main-content .meet-our-leadership-team .members .member .member-img {
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -634,17 +634,96 @@ body p {
   margin-left: 5px;
   font-size: 10px;
 }
+.main-content .meet-our-leadership-team .members .member .tag .modal-window {
+  position: fixed;
+  background-color: rgba(56, 58, 65, 0.75);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.main-content .meet-our-leadership-team .members .member .tag .modal-window:target {
+  visibility: visible;
+  pointer-events: auto;
+}
+.main-content .meet-our-leadership-team .members .member .tag .modal-window > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 80vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  background: white;
+}
+.main-content .meet-our-leadership-team .members .member .tag .modal-window > div > div {
+  flex: 1 0 50%;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+.main-content .meet-our-leadership-team .members .member .tag .modal-window > div > div a {
+  color: #af0000;
+  text-align: right;
+  font-size: 20px;
+}
+.main-content .meet-our-leadership-team .members .member .tag .modal-window > div > div a:hover {
+  text-decoration: underline;
+}
+.main-content .meet-our-leadership-team .members .member .tag .modal-window > div > div a i {
+  font-size: inherit;
+}
+.main-content .meet-our-leadership-team .members .member .tag .modal-window > div > div .modal-close {
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  line-height: 50px;
+  right: 10px;
+  float: right;
+  text-transform: uppercase;
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+}
+.main-content .meet-our-leadership-team .members .member .tag .modal-window > div > div h1 {
+  margin-top: 50px;
+  font-size: 33px;
+}
+.main-content .meet-our-leadership-team .members .member .tag .modal-window > div > div span {
+  font-size: 18px;
+}
+.main-content .meet-our-leadership-team .members .member .tag .modal-window > div .modal-image {
+  width: 38%;
+  margin: 10px;
+  height: 90%;
+}
+.main-content .meet-our-leadership-team .members .member .tag .modal-window header {
+  font-weight: bold;
+}
+.main-content .meet-our-leadership-team .members .member .tag .modal-window h1 {
+  font-size: 150%;
+  margin: 0 0 15px;
+}
 .main-content .meet-our-leadership-team .members .member:hover {
   overflow: hidden;
 }
-.main-content .meet-our-leadership-team .members .member:hover img {
+.main-content .meet-our-leadership-team .members .member:hover .member-img {
   transform: scale(1.1);
 }
-.main-content .meet-our-leadership-team .members .member:hover .tag a {
+.main-content .meet-our-leadership-team .members .member:hover .tag > a {
   color: #af0000;
   border-bottom: 1px solid #af0000;
 }
-.main-content .meet-our-leadership-team .members .member:hover .tag a:hover {
+.main-content .meet-our-leadership-team .members .member:hover .tag > a:hover {
   cursor: default;
 }
 .main-content .partners-say {
