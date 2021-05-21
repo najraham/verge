@@ -8,6 +8,9 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+body img {
+  max-width: 100%;
+}
 body a:hover {
   cursor: default;
 }
@@ -395,7 +398,7 @@ body p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 99.5%;
+  width: 80%;
   margin: 0 auto 70px;
 }
 .case-study-and-white-papers h1 {
