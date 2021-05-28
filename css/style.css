@@ -81,7 +81,8 @@ body p {
 }
 .navbar .nav {
   text-transform: uppercase;
-  width: 80%;
+  width: 90%;
+  max-width: 1020px;
   margin: 0 auto;
   color: #000000;
 }
@@ -97,22 +98,21 @@ body p {
   position: absolute;
   display: inline;
   z-index: 2;
+  top: 10px;
 }
 .navbar .nav .nav-logo .logo {
   max-width: 88%;
 }
 .navbar .nav .navbar-menu .dropdown-menu {
   display: none;
+  font-size: 20px;
+  margin: 0;
 }
 .navbar .nav .navbar-menu .menu-dropdown-content {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   width: 100%;
-}
-.navbar .nav .navbar-menu .menu-dropdown-content .dropdown-menu {
-  display: none;
 }
 .navbar .nav .navbar-menu .menu-dropdown-content .nav-list {
   margin-left: 18%;
@@ -131,6 +131,7 @@ body p {
   margin-top: 20px;
 }
 .navbar .nav .navbar-menu .menu-dropdown-content .nav-list .dropdown-content {
+  list-style: none;
   margin-top: 22px;
   border-top: 3px solid #595d63;
   display: none;
@@ -156,7 +157,7 @@ body p {
 .navbar .nav .navbar-menu .menu-dropdown-content .nav-list .dropdown:hover .dropdown-content {
   display: block;
 }
-.navbar .nav .login-signup {
+.navbar .nav .navbar-menu .menu-dropdown-content .login-signup {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -165,7 +166,7 @@ body p {
   flex: 1 0 10%;
   padding: 5px;
 }
-.navbar .nav .login-signup #login {
+.navbar .nav .navbar-menu .menu-dropdown-content .login-signup #login {
   font-size: 12px;
   text-transform: inherit;
   border: none;
@@ -173,10 +174,10 @@ body p {
   margin-right: 10px;
   transition: 0.2s ease-in-out;
 }
-.navbar .nav .login-signup #login:hover {
+.navbar .nav .navbar-menu .menu-dropdown-content .login-signup #login:hover {
   color: #595d63;
 }
-.navbar .nav .login-signup #signup {
+.navbar .nav .navbar-menu .menu-dropdown-content .login-signup #signup {
   font-size: 12px;
   text-transform: inherit;
   border: none;
@@ -186,41 +187,70 @@ body p {
   width: 125px;
   transition: 0.2s ease-in-out;
 }
-.navbar .nav .login-signup #signup:hover {
+.navbar .nav .navbar-menu .menu-dropdown-content .login-signup #signup:hover {
   background-color: #aeaeae;
 }
 
-@media screen and (max-width: 750px) {
-  .navbar .nav .navbar-menu .dropdown-menu {
-    text-align: right;
-    display: block;
+@media screen and (max-width: 1020px) {
+  .navbar .nav .navbar-menu {
+    height: 50px;
   }
   .navbar .nav .navbar-menu .menu-dropdown {
+    text-align: right;
+    display: block;
     position: relative;
-    display: inline-block;
+    height: 100%;
+    margin-top: 20px;
+  }
+  .navbar .nav .navbar-menu .menu-dropdown .dropdown-menu {
+    display: block;
   }
   .navbar .nav .navbar-menu .menu-dropdown-content {
-    right: 0;
+    margin-top: 23px;
+    flex-direction: column;
     width: 100%;
+    border-top: 3px solid dodgerblue;
     display: none;
+    position: absolute;
     background-color: #ffffff;
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
     z-index: 1;
-    opacity: 0.87;
   }
   .navbar .nav .navbar-menu .menu-dropdown-content .nav-list {
-    display: flex;
+    width: 95%;
+    height: 100%;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    margin: 10px auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .navbar .nav .navbar-menu .menu-dropdown-content .nav-list .mbl-menu-item {
+    font-weight: bold;
+    width: 100%;
+    display: block;
+  }
+  .navbar .nav .navbar-menu .menu-dropdown-content .nav-list .mbl-menu-item li:hover {
+    font-weight: bold;
   }
   .navbar .nav .navbar-menu .menu-dropdown-content .nav-list li {
-    margin: 10px;
+    width: 100%;
+    text-align: left;
+    font-weight: normal;
   }
-  .navbar .nav .navbar-menu .menu-dropdown-content .nav-list li a {
-    height: inherit;
+  .navbar .nav .navbar-menu .menu-dropdown-content .nav-list .dropdown:hover {
+    transform: none;
+  }
+  .navbar .nav .navbar-menu .menu-dropdown-content .nav-list .dropdown-content {
+    display: block;
+    position: relative;
+    border-top: none;
+    box-shadow: none;
+  }
+  .navbar .nav .navbar-menu .menu-dropdown-content .login-signup {
+    width: 100%;
+    justify-content: center;
   }
   .navbar .nav .navbar-menu .menu-dropdown-content a {
     display: block;
@@ -230,7 +260,8 @@ body p {
     cursor: default;
   }
   .navbar .nav .navbar-menu .menu-dropdown:hover .menu-dropdown-content {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 }
 .banner {
