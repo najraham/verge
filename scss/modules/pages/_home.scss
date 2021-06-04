@@ -146,6 +146,10 @@
       width: 71%;
       color: $black;
     }
+
+    img {
+      height: 89%;
+    }
   }
 
   .white-papers {
@@ -189,7 +193,6 @@
     background-color: $white;
     position: absolute;
     width: 80%;
-    height: 250px;
     left: 0;
     right: 0;
     bottom: 15px;
@@ -313,6 +316,14 @@
         p {
           width: 100%;
           font-size: 15px;
+        }
+        .papers{
+          flex-direction: column;
+          justify-content: space-between;
+          .paper {
+            width: 60%;
+            margin: 0 auto 10px;
+          }
         }
       }
     }

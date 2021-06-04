@@ -128,6 +128,7 @@ body p {
 .navbar .nav .navbar-menu .menu-dropdown-content .nav-list .dropdown {
   position: relative;
   display: inline-block;
+  width: 20%;
   height: 100%;
   margin-top: 20px;
 }
@@ -521,6 +522,9 @@ body p {
   width: 71%;
   color: #000000;
 }
+.case-study-and-white-papers .case-study img {
+  height: 89%;
+}
 .case-study-and-white-papers .white-papers {
   width: 65%;
 }
@@ -555,7 +559,6 @@ body p {
   background-color: #ffffff;
   position: absolute;
   width: 80%;
-  height: 250px;
   left: 0;
   right: 0;
   bottom: 15px;
@@ -693,6 +696,48 @@ body p {
 .main-content .case-study-and-white-papers .white-papers p {
     width: 100%;
     font-size: 15px;
+  }
+  .main-content .bg-gray .interact .papers,
+.main-content .bg-gray .get-started .papers,
+.main-content .bg-gray .what-we-do .papers,
+.main-content .bg-gray .whats-new .papers,
+.main-content .bg-gray .case-study .papers,
+.main-content .bg-gray .white-papers .papers,
+.main-content .what-we-do-and-whats-new .interact .papers,
+.main-content .what-we-do-and-whats-new .get-started .papers,
+.main-content .what-we-do-and-whats-new .what-we-do .papers,
+.main-content .what-we-do-and-whats-new .whats-new .papers,
+.main-content .what-we-do-and-whats-new .case-study .papers,
+.main-content .what-we-do-and-whats-new .white-papers .papers,
+.main-content .case-study-and-white-papers .interact .papers,
+.main-content .case-study-and-white-papers .get-started .papers,
+.main-content .case-study-and-white-papers .what-we-do .papers,
+.main-content .case-study-and-white-papers .whats-new .papers,
+.main-content .case-study-and-white-papers .case-study .papers,
+.main-content .case-study-and-white-papers .white-papers .papers {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main-content .bg-gray .interact .papers .paper,
+.main-content .bg-gray .get-started .papers .paper,
+.main-content .bg-gray .what-we-do .papers .paper,
+.main-content .bg-gray .whats-new .papers .paper,
+.main-content .bg-gray .case-study .papers .paper,
+.main-content .bg-gray .white-papers .papers .paper,
+.main-content .what-we-do-and-whats-new .interact .papers .paper,
+.main-content .what-we-do-and-whats-new .get-started .papers .paper,
+.main-content .what-we-do-and-whats-new .what-we-do .papers .paper,
+.main-content .what-we-do-and-whats-new .whats-new .papers .paper,
+.main-content .what-we-do-and-whats-new .case-study .papers .paper,
+.main-content .what-we-do-and-whats-new .white-papers .papers .paper,
+.main-content .case-study-and-white-papers .interact .papers .paper,
+.main-content .case-study-and-white-papers .get-started .papers .paper,
+.main-content .case-study-and-white-papers .what-we-do .papers .paper,
+.main-content .case-study-and-white-papers .whats-new .papers .paper,
+.main-content .case-study-and-white-papers .case-study .papers .paper,
+.main-content .case-study-and-white-papers .white-papers .papers .paper {
+    width: 60%;
+    margin: 0 auto 10px;
   }
 }
 .main-content {
@@ -2010,15 +2055,16 @@ body p {
   width: 30%;
   color: #aeaeae;
 }
+.footer .contact-info .contact-us h1 {
+  text-transform: uppercase;
+  border-bottom: 2px solid #ffffff;
+}
 .footer .contact-info .contact-us:hover {
   color: #000000;
 }
 .footer .contact-info .contact-us:hover h1 {
   border-bottom: 2px solid #af0000;
   width: 50%;
-}
-.footer .contact-info .contact-us h1 {
-  text-transform: uppercase;
 }
 .footer footer {
   width: 100%;

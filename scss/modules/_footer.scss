@@ -79,6 +79,10 @@
     .contact-us {
       width: 30%;
       color: $gray;
+      h1 {
+        text-transform: uppercase;
+        border-bottom: 2px solid $white;
+      }
 
       &:hover {
         color: $black;
@@ -86,10 +90,6 @@
           border-bottom: 2px solid $red;
           width: 50%;
         }
-      }
-
-      h1 {
-        text-transform: uppercase;
       }
     }
   }
