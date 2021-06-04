@@ -9,6 +9,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/7dd0b928a5.js" crossorigin="anonymous"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script>
+        $("document").ready(function() {
+            var width = 995;
+            $(".dropdown-menu").click(toggleMenu)
+
+            function toggleMenu () {
+                $(".menu-dropdown-content").css("display") === "none"  ?
+                    $(".menu-dropdown-content").css({"display": "flex" , "flex-direction": "column"}) :
+                    $(".menu-dropdown-content").css("display", "none");
+            }
+
+            $(window).resize(function() {
+                if ($(window).width() > width) {
+                    $(".menu-dropdown-content").css({"display": "flex" , "flex-direction": "row"})
+                }
+            });
+
+            var animationSpeed = 5000; // How quickly the next slide animates.//
+
+            var pause = 5000; // The pause between each slide.//
+
+            setInterval(function() {
+                startSlider();
+            }, pause);
+
+            function startSlider() {
+                $('.slides > li:first')
+                    .fadeOut(animationSpeed)
+                    .next()
+                    .fadeIn(animationSpeed)
+                    .end()
+                    .appendTo('.slides');
+            }
+        })
+    </script>
     <title>Verge</title>
 </head>
 <body>
@@ -20,11 +59,9 @@
     </div>
     <nav class="navbar">
         <div class="nav">
-            <div class="nav-logo">
-                <a href="index.html">
-                    <img class="logo" src="images/logo.png" alt="logo">
-                </a>
-            </div>
+            <a class="nav-logo" href="index.html">
+                <img class="logo" src="images/logo.png" alt="logo">
+            </a>
             <div class="navbar-menu ">
                 <div class="menu-dropdown">
                     <h4 class="dropdown-menu"><i class="fas fa-bars"></i></h4>
@@ -60,23 +97,46 @@
         </div>
     </nav>
 
-    <section class="banner-home">
-        <div class="banner-img">
-            <img src="https://picsum.photos/1200/850" alt="banner 1">
-        </div>
-        <div class="banner-desc">
-            <h1>We are at the convergence of digital, precision and autonomous agriculture.</h1>
-            <p>At verge, we focus on keeping growers connected to the land while focusing on simplifying complexities around entire farming operations.</p>
-            <button> Learn more</button>
-        </div>
-        <ol class="pagination">
-            <li><a href="#" class="active">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-        </ol>
-    </section>
+    <div class="slider">
+        <ul class="slides">
+            <li class="slide banner-home">
+                <div class="banner-img">
+                    <img src="images/banner/banner1.jpg" alt="banner 1">
+                </div>
+                <div class="banner-desc">
+                    <h1>We are at the convergence of digital, precision and autonomous agriculture.</h1>
+                    <p>At verge, we focus on keeping growers connected to the land while focusing on simplifying complexities around entire farming operations.</p>
+                    <button> Learn more</button>
+                </div>
+                <ol class="pagination">
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                </ol>
+            </li>
+            <li class="slide banner-home">
+                <div class="banner-img">
+                    <img src="https://picsum.photos/1300/700" alt="banner 1">
+                </div>
+                <div class="banner-desc">
+                    <h1>We are at the convergence of digital, precision and autonomous agriculture.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consectetur earum est eveniet fuga iusto modi pariatur quam unde veniam. Ab culpa doloremque et eveniet illum iure officiis, perferendis perspiciatis!</p>
+                    <button> Learn more</button>
+                </div>
+                <ol class="pagination">
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+
+
 
     <section class="main-content container">
         <div class="what-we-do-and-whats-new">
@@ -125,7 +185,7 @@
             <div class="case-study">
                 <hr>
                 <h1>Case study</h1>
-                <img src="https://picsum.photos/350/658" alt="">
+                <img src="images/garrett-parker-DlkF4-dbCOU-unsplash.jpg" alt="">
                 <div class="tag">
                     <h1>Coutts agro case study</h1>
                     <p>At verge, we focus on keeping growers connected to the land while focusing on simplifying complexities around entire farming operations.</p>
@@ -137,7 +197,7 @@
                 <h1>White papers</h1>
                 <div class="papers">
                     <div class="paper">
-                        <img src="https://picsum.photos/350/650" alt="">
+                        <img src="images/garrett-parker-DlkF4-dbCOU-unsplash.jpg" alt="">
                         <div class="tag">
                             <h3>the true value of path planning</h3>
                             <h1>Coutts agro case study</h1>
@@ -146,7 +206,7 @@
                         </div>
                     </div>
                     <div class="paper">
-                        <img src="https://picsum.photos/350/650" alt="">
+                        <img src="images/garrett-parker-DlkF4-dbCOU-unsplash.jpg" alt="">
                         <div class="tag">
                             <h3>the true value of path planning</h3>
                             <h1>Coutts agro case study</h1>
@@ -213,5 +273,6 @@
             </div>
         </footer>
     </section>
+
 </body>
 </html>

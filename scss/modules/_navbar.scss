@@ -62,12 +62,11 @@
     }
 
     .nav-logo {
-      width: 15%;
+      width: 150px;
       position: absolute;
       display: inline;
       z-index: 2;
       top: 10px;
-
       .logo{
         max-width: 88%;
       }
@@ -190,7 +189,7 @@
           margin-top: 20px;
 
           .dropdown-menu {
-            display: block;
+            display: inline-block;
           }
         }
 
@@ -254,11 +253,6 @@
               cursor: default;
             }
           }
-        }
-
-        .menu-dropdown:hover .menu-dropdown-content {
-          display: flex;
-          flex-direction: column;
         }
       }
     }

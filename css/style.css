@@ -21,6 +21,7 @@ body p {
 }
 
 .main-content {
+  display: block;
   padding: 40px 0;
 }
 .main-content h1 {
@@ -94,7 +95,7 @@ body p {
   cursor: default;
 }
 .navbar .nav .nav-logo {
-  width: 15%;
+  width: 150px;
   position: absolute;
   display: inline;
   z-index: 2;
@@ -203,7 +204,7 @@ body p {
     margin-top: 20px;
   }
   .navbar .nav .navbar-menu .menu-dropdown .dropdown-menu {
-    display: block;
+    display: inline-block;
   }
   .navbar .nav .navbar-menu .menu-dropdown-content {
     margin-top: 23px;
@@ -258,10 +259,6 @@ body p {
   }
   .navbar .nav .navbar-menu .menu-dropdown-content a:hover {
     cursor: default;
-  }
-  .navbar .nav .navbar-menu .menu-dropdown:hover .menu-dropdown-content {
-    display: flex;
-    flex-direction: column;
   }
 }
 .banner {
@@ -342,6 +339,20 @@ body p {
   background: #af0000;
 }
 
+.slider {
+  display: block;
+  overflow: hidden;
+  padding-top: 70px;
+}
+.slider .slides {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slider .slide {
+  position: absolute;
+}
+
 .banner-home .banner-img img {
   max-width: 80%;
   height: 120vh;
@@ -375,7 +386,7 @@ body p {
 .banner-home .pagination {
   position: absolute;
   z-index: 5;
-  bottom: -40%;
+  bottom: -70px;
   left: 50%;
 }
 
@@ -400,7 +411,7 @@ body p {
 
 .what-we-do-and-whats-new {
   width: 90%;
-  margin: 0 auto 20px;
+  margin: 800px auto 20px;
   padding-top: 40px;
   display: flex;
   flex-direction: row;

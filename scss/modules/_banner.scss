@@ -86,6 +86,22 @@
   }
 }
 
+.slider {
+  display: block;
+  overflow: hidden;
+  padding-top: 70px;
+
+  .slides {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slide {
+    position: absolute;
+  }
+}
+
 .banner-home {
   .banner-img {
     img {
@@ -126,7 +142,7 @@
   .pagination {
     position: absolute;
     z-index: 5;
-    bottom: -40%;
+    bottom: -70px;
     left: 50%;
   }
 }
