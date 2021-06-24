@@ -386,8 +386,8 @@ body p {
 }
 .banner-home .pagination {
   position: absolute;
-  z-index: 5;
-  bottom: -70px;
+  z-index: 4545;
+  top: 750px;
   left: 50%;
 }
 

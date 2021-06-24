@@ -13,43 +13,71 @@
             src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous"></script>
+
+    <style>
+        @keyframes fadeOut {
+            0% {opacity: 1;}
+            100% {opacity: 0;}
+        }
+
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+    </style>
     <script>
-        $("document").ready(function() {
-            var width = 1020;
-            $(".dropdown-menu").click(toggleMenu)
 
-            function toggleMenu () {
-                $(".menu-dropdown-content").css("display") === "none"  ?
-                    $(".menu-dropdown-content").css({"display": "flex" , "flex-direction": "column"}) :
-                    $(".menu-dropdown-content").css("display", "none");
+    $("document").ready(function() {
+        var width = 1020;
+        $(".dropdown-menu").click(toggleMenu)
+
+        function toggleMenu () {
+            $(".menu-dropdown-content").css("display") === "none"  ?
+                $(".menu-dropdown-content").css({"display": "flex" , "flex-direction": "column"}) :
+                $(".menu-dropdown-content").css("display", "none");
+        }
+
+        $(window).resize(function() {
+            if ($(window).width() >= width) {
+                $(".menu-dropdown-content").css({"display": "flex" , "flex-direction": "row"})
             }
-
-            $(window).resize(function() {
-                if ($(window).width() >= width) {
-                    $(".menu-dropdown-content").css({"display": "flex" , "flex-direction": "row"})
-                }
-                else {
-                    $(".menu-dropdown-content").css({"display": "none"})
-                }
-            });
-
-            var animationSpeed = 5000; // How quickly the next slide animates.//
-
-            var pause = 5000; // The pause between each slide.//
-
-            setInterval(function() {
-                startSlider();
-            }, pause);
-
-            function startSlider() {
-                $('.slides > li:first')
-                    .fadeOut(animationSpeed)
-                    .next()
-                    .fadeIn(animationSpeed)
-                    .end()
-                    .appendTo('.slides');
+            else {
+                $(".menu-dropdown-content").css({"display": "none"})
             }
-        })
+        });
+
+        setInterval(function() {
+            startSlider(1);
+        }, 5000);
+    })
+
+    function startSlider(index) {
+        if(index<=5){
+            $(`.slides > li:nth-child(${index})`).clearQueue()
+            // console.log($(`.slides > li:nth-child(${index})`).css("display") === "none")
+            if($(`.slides > li:nth-child(${index})`).css("display") === "none" ){
+                $(`.slides > li:nth-child(${index})`).fadeIn(5000,
+                    () => {
+                        startSlider(index+1)
+                    })
+            }
+            else {
+                $(`.slides > li:nth-child(${index})`).fadeOut( 5000,
+                    () => {
+                        startSlider(index+1)
+                    })
+            }
+        }
+        else {
+                    startSlider(1)
+
+        }
+    }
+
+    function gotoSlide(x) {
+        $('.slides > li').stop(true, true)
+        startSlider(x)
+    }
     </script>
     <title>Verge</title>
 </head>
@@ -100,43 +128,66 @@
         </div>
     </nav>
 
-    <div class="slider">
+    <div class="slider banner-home">
         <ul class="slides">
-            <li class="slide banner-home">
+            <li id="slide1" style="z-index: 5" class="slide">
                 <div class="banner-img">
                     <img src="images/banner/banner1.jpg" alt="banner 1">
                 </div>
                 <div class="banner-desc">
-                    <h1>We are at the convergence of digital, precision and autonomous agriculture.</h1>
+                    <h1>1We are at the convergence of digital, precision and autonomous agriculture.</h1>
                     <p>At verge, we focus on keeping growers connected to the land while focusing on simplifying complexities around entire farming operations.</p>
                     <button> Learn more</button>
                 </div>
-                <ol class="pagination">
-                    <li><a href="#" class="active">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                </ol>
             </li>
-            <li class="slide banner-home">
+            <li id="slide2" style="z-index: 4" class="slide">
                 <div class="banner-img">
                     <img src="https://picsum.photos/1300/700" alt="banner 1">
                 </div>
                 <div class="banner-desc">
-                    <h1>We are at the convergence of digital, precision and autonomous agriculture.</h1>
+                    <h1>2We are at the convergence of digital, precision and autonomous agriculture.</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consectetur earum est eveniet fuga iusto modi pariatur quam unde veniam. Ab culpa doloremque et eveniet illum iure officiis, perferendis perspiciatis!</p>
                     <button> Learn more</button>
                 </div>
-                <ol class="pagination">
-                    <li><a href="#" class="active">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                </ol>
+            </li>
+            <li id="slide3" style="z-index: 3" class="slide">
+                <div class="banner-img">
+                    <img src="https://picsum.photos/1300/700" alt="banner 1">
+                </div>
+                <div class="banner-desc">
+                    <h1>3We are at the convergence of digital, precision and autonomous agriculture.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consectetur earum est eveniet fuga iusto modi pariatur quam unde veniam. Ab culpa doloremque et eveniet illum iure officiis, perferendis perspiciatis!</p>
+                    <button> Learn more</button>
+                </div>
+            </li>
+            <li id="slide4" style="z-index: 2" class="slide">
+                <div class="banner-img">
+                    <img src="https://picsum.photos/1300/700" alt="banner 1">
+                </div>
+                <div class="banner-desc">
+                    <h1>4We are at the convergence of digital, precision and autonomous agriculture.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consectetur earum est eveniet fuga iusto modi pariatur quam unde veniam. Ab culpa doloremque et eveniet illum iure officiis, perferendis perspiciatis!</p>
+                    <button> Learn more</button>
+                </div>
+            </li>
+            <li id="slide5" style="z-index: 1" class="slide">
+                <div class="banner-img">
+                    <img src="https://picsum.photos/1300/700" alt="banner 1">
+                </div>
+                <div class="banner-desc">
+                    <h1>5We are at the convergence of digital, precision and autonomous agriculture.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consectetur earum est eveniet fuga iusto modi pariatur quam unde veniam. Ab culpa doloremque et eveniet illum iure officiis, perferendis perspiciatis!</p>
+                    <button> Learn more</button>
+                </div>
             </li>
         </ul>
+        <ol class="pagination">
+            <li><a href="javascript:void(0)" onclick="gotoSlide(1)" class="active">1</a></li>
+            <li><a href="javascript:void(0)" onclick="gotoSlide(2)">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+        </ol>
     </div>
 
 
